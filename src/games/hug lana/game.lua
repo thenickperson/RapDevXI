@@ -54,8 +54,8 @@ return {
 			love.graphics.setColor(255,255,255)
 			love.graphics.print( (self.time_limit-self.elapsed_time).."s left", 0,0)
 
-			love.graphics.draw(self.lana.img, self.lana.x, self.lana.y, 0)
-			love.graphics.draw(self.lana.img, self.lana.x, self.lana.y, 0)
+			love.graphics.draw(self.lana.img, self.lana.x, self.lana.y)
+			love.graphics.draw(self.player.img, self.player.x, self.player.y)
 		end
 		
 		self.isDone = function(self)
