@@ -16,7 +16,7 @@ return {
 			self.lana = {x = 200, y=20}
 			self.player = {x=100, y=300}
 			self.lana.img = love.graphics.newImage(basePath.."lana.jpg")
-			self.player.img = love.graphics.newImage(basePath.."player.jpg")
+			self.player.img = love.graphics.newImage(basePath.."player.png")
 			self.music = love.audio.newSource(basePath.."")
 			self.musicStarted = false
 			self.elapsed_time = 0
