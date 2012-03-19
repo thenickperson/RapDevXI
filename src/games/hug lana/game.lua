@@ -17,17 +17,21 @@ return {
 			self.player = {x=100, y=300}
 			self.lana.img = love.graphics.newImage(basePath.."lana.jpg")
 			self.player.img = love.graphics.newImage(basePath.."player.png")
+			--[[
 			self.music = love.audio.newSource(basePath.."")
 			self.musicStarted = false
+			--]]
 			self.elapsed_time = 0
 		end
 
 		self.update = function(self, dt)
 			self.elapsed_time = self.elapsed_time+dt
+			--[[
 			if not self.musicStarted then
 				love.audio.play(self.music)
 				self.musicStarted = true
 			end
+			]]--
 
 			self.lana = {y = blah}
 			if love.keyboard.isdown("up") then
