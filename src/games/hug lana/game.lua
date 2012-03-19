@@ -32,7 +32,7 @@ return {
 			end
 			]]--
 
-			self.lana = {y = y + self.lana.speed}
+			self.lana = {y = self.lana.y + self.lana.speed}
 
 			if love.keyboard.isDown("up") then
 				self.player.y = self.player.y - self.player.speed
