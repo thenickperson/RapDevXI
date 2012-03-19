@@ -34,16 +34,16 @@ return {
 			]]--
 
 			self.lana = {y = blah}
-			if love.keyboard.isdown("up") then
+			if love.keyboard.isDown("up") then
 				self.player.y = self.player.y - self.playerSpeed
 			end
-			if love.keyboard.isdown("down") then
+			if love.keyboard.isDown("down") then
 				self.player.y = self.player.y + self.playerSpeed
 			end
-			if love.keyboard.isdown("left") then
+			if love.keyboard.isDown("left") then
 				self.player.y = self.player.y - self.playerSpeed
 			end
-			if love.keyboard.isdown("right") then
+			if love.keyboard.isDown("right") then
 				self.player.y = self.player.y + self.playerSpeed
 			end
 		end
