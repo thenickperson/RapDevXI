@@ -19,7 +19,7 @@ return {
 			self.handLoc = {up = 150, down = 200} --up and down values
 			self.handL.img = love.graphics.newImage(basePath.."hand.png")
 			self.handR.img = love.graphics.newImage(basePath.."hand.png")
-			self.music = love.audio.newSource(basePath.."guiles_theme_short.mp3")
+			self.music = love.audio.newSource(basePath.."guiles-theme-short.mp3")
 			self.musicStarted = false
 			self.elapsed_time = 0
 		end
