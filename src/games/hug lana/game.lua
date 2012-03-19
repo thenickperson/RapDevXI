@@ -12,9 +12,8 @@ return {
 		self.getReady = function(self, basePath)
 			--self.image = love.graphics.newImage(basePath.."sprite.png")
 			--self.sound = love.audio.newSource(basePath.."sound.mp3")
-			self.playerSpeed = 5
-			self.lana = {x = 200, y=20}
-			self.player = {x=100, y=300}
+			self.lana = {x = 200, y=20, speed=3}
+			self.player = {x=100, y=300, speed=5}
 			self.lana.img = love.graphics.newImage(basePath.."lana.jpg")
 			self.player.img = love.graphics.newImage(basePath.."player.png")
 			--[[
@@ -33,18 +32,19 @@ return {
 			end
 			]]--
 
-			self.lana = {y = blah}
+			self.lana = {y = y + self.lana.speed}
+
 			if love.keyboard.isDown("up") then
-				self.player.y = self.player.y - self.playerSpeed
+				self.player.y = self.player.y - self.player.speed
 			end
 			if love.keyboard.isDown("down") then
-				self.player.y = self.player.y + self.playerSpeed
+				self.player.y = self.player.y + self.player.speed
 			end
 			if love.keyboard.isDown("left") then
-				self.player.y = self.player.y - self.playerSpeed
+				self.player.y = self.player.y - self.player.speed
 			end
 			if love.keyboard.isDown("right") then
-				self.player.y = self.player.y + self.playerSpeed
+				self.player.y = self.player.y + self.player.speed
 			end
 		end
 		
