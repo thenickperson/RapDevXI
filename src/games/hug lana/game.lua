@@ -11,12 +11,13 @@ return {
 		
 		self.getReady = function(self, basePath)
 			--properties
-			self.enemy1 = {x=math.random(0,400), y=math.random(0,200), speed=1}
-			self.enemy2 = {x=math.random(0,400), y=math.random(0,200), speed=2}
-			self.enemy3 = {x=math.random(0,400), y=math.random(0,200), speed=4}
-			self.enemy4 = {x=math.random(0,400), y=math.random(0,200), speed=5}
-			self.lana   = {x=math.random(0,400), y=math.random(0,200), speed=3}
-			self.player = {x=math.random(0,400), y=math.random(200,400), speed=5}
+			math.randomseed(os.time())
+			self.enemy1 = {x=math.random(0,400), y=math.random(0,100), speed=1}
+			self.enemy2 = {x=math.random(0,400), y=math.random(0,100), speed=2}
+			self.enemy3 = {x=math.random(0,400), y=math.random(0,100), speed=4}
+			self.enemy4 = {x=math.random(0,400), y=math.random(0,100), speed=5}
+			self.lana   = {x=math.random(0,400), y=math.random(0,100), speed=3}
+			self.player = {x=math.random(0,400), y=math.random(300,400), speed=5}
 
 			--images
 			self.enemyImage = love.graphics.newImage(basePath.."yourargumentisinvalidistartindexesatone.png")
