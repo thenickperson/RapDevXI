@@ -14,7 +14,7 @@ return {
 			--self.sound = love.audio.newSource(basePath.."sound.mp3")
 			self.lana = {x = 200, y=20, speed=3}
 			self.player = {x=100, y=300, speed=5}
-			self.lana.img = love.graphics.newImage(basePath.."lana.jpg")
+			self.lana.img = love.graphics.newImage(basePath.."lana.png")
 			self.player.img = love.graphics.newImage(basePath.."player.png")
 			--[[
 			self.music = love.audio.newSource(basePath.."")
